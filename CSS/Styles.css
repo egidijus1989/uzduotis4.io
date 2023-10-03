@@ -82,6 +82,7 @@ nav li a {
 .content {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     align-items: center;
 }
 .contentL h3 {
