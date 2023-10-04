@@ -4,8 +4,9 @@
 .container {
     background: #FFF;
     margin: 0 auto;
-    width: 1440px;
-    height: 3155px;
+    width: 80%;
+    /*width: 1440px;
+    height: 3155px;*/
 }
 a {
     text-decoration: none;
@@ -13,6 +14,9 @@ a {
 li {
     list-style-type: none;
 }
+
+/*header*/
+
 header {
     display: flex;
     align-items: center;
@@ -79,13 +83,18 @@ nav li a {
     background: #FF64AE;
     padding: 10px 30px;
 }
+
+/*content*/
+
 .content {
     display: flex;
-    justify-content: space-between;
+    justify-content:last baseline;
     gap: 30px;
     align-items: center;
+    background-image: url("../IMG/Bubble\ 2ege.png");
 }
 .contentL h3 {
+    margin-top: 60px;
     color: #FF64AE;
     font-family: Poppins;
     font-size: 16px;
@@ -116,20 +125,57 @@ nav li a {
     line-height: normal;
     letter-spacing: 1.6px; 
 }
-.name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+form {
+    width: 520px;
 }
-.name i {
+form .name {
+    display: inline-block;
+    justify-content: space-between;
+}
+.name input {
+    width: 257px;
+    height: 61.579px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #D9DDFE;
+    background: #FFF;
+}
+.email input, .subject input {
+    width: 520px;
+    height: 61.579px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #D9DDFE;
+    background: #FFF;
+}
+form .name, form .email, form .subject {
+    border-radius: 15px;
+    border: 1px solid #D9DDFE;
+    background: #FFF
+}
+form textarea {
+    width: 520px;
+    height: 239.474px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid #D9DDFE;
+    background: #FFF;
+}
+form ::placeholder {
+    height: 28px;
+    flex-shrink: 0;
     color: #C5C5C5;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1.6px; 
+    letter-spacing: 1.6px;
+    text-align: left;
+    padding-left: 25px;
+}
+form textarea::placeholder {
+    padding-top: 25px;
 }
 .formB {
     color: #FFF;
